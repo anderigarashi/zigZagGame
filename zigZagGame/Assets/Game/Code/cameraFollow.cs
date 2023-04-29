@@ -22,14 +22,17 @@ public class cameraFollow : MonoBehaviour
 
     void LateUpdate()
     {
-        PersegueFunc();
+        if(!ballController.gameOver)
+        {
+            PersegueFunc();
+        }
     }
 
     void PersegueFunc()
     {
         posCam = transform.position;
         targetPos = player.position - distance;
-        posCam = Vector3.Lerp(posCam, targetPos, lerpValue * Time.deltaTime);
+        posCam = Vector3.Lerp(posCam, targetPos, lerpValue);
         transform.position = posCam;
     }
 }
