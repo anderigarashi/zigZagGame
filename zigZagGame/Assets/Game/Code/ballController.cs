@@ -6,7 +6,7 @@ using TMPro;
 public class ballController : MonoBehaviour
 {
     [Header("Player Refs")]
-    [SerializeField] private float speed = 0.2f;
+    [SerializeField] private float speed = 0.2f, limitSpeed = 2.5f;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private gameData gameValues;
     public TextMeshProUGUI txt;
@@ -67,7 +67,10 @@ public class ballController : MonoBehaviour
         while(!gameOver)
         {
             yield return new WaitForSeconds(2);
-            speed += 0.2f;
+            if(speed <= limitSpeed)
+            {
+                speed += 0.2f;
+            }
         }
     }
 }

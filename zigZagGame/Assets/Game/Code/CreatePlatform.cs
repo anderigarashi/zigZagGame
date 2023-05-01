@@ -10,6 +10,8 @@ public class CreatePlatform : MonoBehaviour
     [Header("Game Design Balancing Values")]
     [SerializeField] private int spawnCoins_percent;
     [SerializeField] private float spawnSpeed_sec;
+    [SerializeField] private int limitFloors;
+    public static int floorNumScene;
 
 
     private float sizeXZ;
@@ -64,14 +66,20 @@ public class CreatePlatform : MonoBehaviour
     void CreateFloorXZ()
     {
         int temp = Random.Range(0, 10);
-        if(temp < 5)
+        if(floorNumScene < limitFloors)
+        {
+            if(temp < 5)
         {
             CreateX();
+            floorNumScene++;
         }
         else if(temp >= 5)
         {
             CreateZ();
+            floorNumScene++;
         }
+        }
+        
     }
     IEnumerator CreateFloorInGame()
     {

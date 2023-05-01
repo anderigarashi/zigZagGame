@@ -403,8 +403,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.10760227, y: 0.1735548, z: -0.019080607, w: 0.97874224}
-  m_LocalPosition: {x: -2.2877326, y: 2.2874587, z: -5.5750456}
+  m_LocalRotation: {x: 0.15494362, y: 0.3897273, z: -0.06669865, w: 0.9053488}
+  m_LocalPosition: {x: -4.5, y: 3.4021924, z: -5.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1167,6 +1167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  limitSpeed: 2.5
   rb: {fileID: 1596755872}
   gameValues: {fileID: 11400000, guid: 5550c2819294fef4e903a2a7dcab4e93, type: 2}
   txt: {fileID: 1352227312}
@@ -1397,7 +1398,8 @@ MonoBehaviour:
   plat: {fileID: 5075276737983339727, guid: 4b661b31e38aadb46b625f98c4316c0a, type: 3}
   coin: {fileID: 581440913109127338, guid: ca59ad271d658634a954eb68b05a635b, type: 3}
   spawnCoins_percent: 5
-  spawnSpeed_sec: 0.5
+  spawnSpeed_sec: 0.25
+  limitFloors: 20
 --- !u!4 &2108360252
 Transform:
   m_ObjectHideFlags: 0

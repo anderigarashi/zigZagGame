@@ -12,6 +12,7 @@ public class PlatCode : MonoBehaviour
         {
             rb.useGravity = true;
             Destroy(gameObject, 0.3f);
+            CreatePlatform.floorNumScene--;
         }
     }
 
