@@ -21,7 +21,7 @@ public class ballController : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && !gameOver)
         {
             BallMovement();
         }
@@ -57,8 +57,7 @@ public class ballController : MonoBehaviour
         {
             Destroy(col.gameObject);
             gameValues.coins++;
-            //Update UI
-            //coinsNum++;
+            UIManager.instance.UpdateUI();
         }
     }
 

@@ -11,8 +11,9 @@ public class PlatCode : MonoBehaviour
         if(col.gameObject.tag == "Player")
         {
             rb.useGravity = true;
-            Destroy(gameObject, 0.3f);
+            Destroy(gameObject, 0.5f);
             CreatePlatform.floorNumScene--;
+            UIManager.instance.UpdateUI();
         }
     }
 
