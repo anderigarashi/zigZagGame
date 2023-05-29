@@ -12,5 +12,7 @@ public class gameData : ScriptableObject
     public int haveSkin1;
     public int haveSkin2;
     public int haveSkin3;
+    public int coinValue;
+    public int scoreValue;
 
 }

@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: gameValues
   m_EditorClassIdentifier: 
   coins: 0
+  score: 0
   haveSkin0: 0
   haveSkin1: 0
   haveSkin2: 0
   haveSkin3: 0
+  coinValue: 10
+  scoreValue: 10

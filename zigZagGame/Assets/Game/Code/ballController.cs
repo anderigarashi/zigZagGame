@@ -11,7 +11,6 @@ public class ballController : MonoBehaviour
     [SerializeField] private gameData gameValues;
     public TextMeshProUGUI txt;
     public static bool gameOver = false;
-    private int coinsNum = 0;
     
     void Start()
     {

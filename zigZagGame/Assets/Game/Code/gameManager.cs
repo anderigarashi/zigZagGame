@@ -11,10 +11,12 @@ public class gameManager : MonoBehaviour
         if(Time.timeScale == 1)
         {
             Time.timeScale = 0;
+            UIManager.instance.ShowHidePausedTxt(true);
         }
         else
         {
             Time.timeScale = 1;
+            UIManager.instance.ShowHidePausedTxt(false);
         }
     }
 }
